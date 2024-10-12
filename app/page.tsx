@@ -22,8 +22,8 @@ export default function Home() {
           Coming Soon!
         </h2>
       </div>
+      <CDTimer />
     </div>
-    <CDTimer />
   );
 
 }
