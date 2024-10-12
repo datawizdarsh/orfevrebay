@@ -2,11 +2,23 @@
 
 import React, { useState, useEffect } from 'react';
 
-const Timer = () => {
-  const targetDate = new Date('2024-10-31T00:00:00').getTime();
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+interface TimeLeft {
+  days: number;
+  hours: number;
+  minutes: number;
+  seconds: number;
+}
 
-  function calculateTimeLeft() {
+interface TimeUnitProps {
+  value: number;
+  unit: string;
+}
+
+const Timer: React.FC = () => {
+  const targetDate = new Date('2024-10-31T00:00:00').getTime();
+  const [timeLeft, setTimeLeft] = useState<TimeLeft>(calculateTimeLeft());
+
+  function calculateTimeLeft(): TimeLeft {
     const difference = targetDate - new Date().getTime();
     
     if (difference > 0) {
@@ -43,7 +55,7 @@ const Timer = () => {
   );
 };
 
-const TimeUnit = ({ value, unit }) => (
+const TimeUnit: React.FC<TimeUnitProps> = ({ value, unit }) => (
   <div className="flex flex-col items-center">
     <div className="text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-gray-100 via-gray-300 to-gray-500 shadow-lg">
       {value.toString().padStart(2, '0')}
