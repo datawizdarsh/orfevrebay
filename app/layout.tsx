@@ -9,12 +9,12 @@ export const metadata: Metadata = {
     default: "Orfevrebay Designs",
     template: "%s | Orfevrebay Designs",
   },
-  description: "Co-founder of unkey.dev and founder of planetfall.io",
+  description: "Allergen-Free Sustainable Jewellery",
   openGraph: {
     title: "Orfevrebay Designs",
     description:
-      "Co-founder of unkey.dev and founder of planetfall.io",
-    url: "https://chronark.com",
+      "Allergen-Free Sustainable Jewellery",
+    url: "orfevrebay.vercel.app",
     siteName: "Orfevrebay Designs",
     images: [
       {
