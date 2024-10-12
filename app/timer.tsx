@@ -1,5 +1,6 @@
-import React from 'react';
-import { useState, useEffect } from 'react';
+'use client';
+
+import React, { useState, useEffect } from 'react';
 
 const Timer = () => {
   const targetDate = new Date('2024-10-31T00:00:00').getTime();
