@@ -21,6 +21,7 @@ export default function Home() {
         <h2 className="text-base text-zinc-500 ">
           Coming Soon!
         </h2>
+        <br></br>
         <Timer />
       </div>
     </div>

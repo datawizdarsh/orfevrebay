@@ -42,7 +42,7 @@ const Timer: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex justify-center items-center h-screen bg-black">
+    <div className="flex justify-center items-center">
       <div className="text-center">
         <div className="flex space-x-4">
           <TimeUnit value={timeLeft.days} unit="Days" />
