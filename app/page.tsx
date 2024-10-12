@@ -1,11 +1,8 @@
-import Link from "next/link";
 import React from "react";
 import Particles from "./components/particles";
+import CDTimer from "./timer";
 
-const navigation = [
-  { name: "Projects", href: "/projects" },
-  { name: "Contact", href: "/contact" },
-];
+
 
 export default function Home() {
   return (
@@ -21,11 +18,12 @@ export default function Home() {
 
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <div className="my-16 text-center animate-fade-in">
-        <h2 className="text-sm text-zinc-500 ">
+        <h2 className="text-base text-zinc-500 ">
           Coming Soon!
         </h2>
       </div>
     </div>
+    <CDTimer />
   );
 
 }
