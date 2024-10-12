@@ -1,6 +1,6 @@
 import React from "react";
 import Particles from "./components/particles";
-import CDTimer from "./timer";
+import Timer from "./timer";
 
 
 
@@ -22,7 +22,7 @@ export default function Home() {
           Coming Soon!
         </h2>
       </div>
-      <CDTimer />
+      <Timer />
     </div>
   );
 
